@@ -1,12 +1,95 @@
+*{
+    font-family: work;
+}
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 230px;
+}
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center; /* This is to align paragraph and list together */
 }
-nav ul{
+nav>ul{
     display: flex;
-    gap: 25px;
     text-decoration: none;
+}
+nav li{
+    margin-right: 25px;
+    list-style: none;
 }
 a{
     text-decoration: none;
+}
+.nav-head{
+    color: var(--Dark-01, #131313);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-style: normal;
+}
+nav>ul>li{
+    color: var(--Dark-02, #424242);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.ban-head{
+    color: var(--Dark-01, #131313);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.ban-para{
+    color: var(--Dark-03, #727272);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn-prime{
+    width: 180px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    background: #FF900E;
+    padding: 20px 25px;
+    border: 0px;
+    /* margin: 0px 870px; */
+    margin-bottom: 3.12rem;
+    cursor: pointer;
+}
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive style */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav>ul, nav{
+        flex-direction: column;
+    }
+}
+/* responsive for tab */
+@media screen and (min-width:576px) and (max-width: 990px) {
+
+    header{
+        padding: 20px;
+    }
+    nav>ul, nav{
+        flex-direction: column;
+    }
+
 }
