@@ -93,3 +93,48 @@ nav>ul>li{
     }
 
 }
+/* main styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding: 0 70px;
+    /* border: solid red 5px; */
+}
+.teams-title{
+    max-width: 468px;
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    /* border: solid red 5px; */
+}
+.black{
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-weight: 700;
+}
+.orange{
+    color: #FF900E;
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-weight: 700;
+}
+.teams-description{
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 400;
+}
