@@ -2,7 +2,13 @@
 *{
     font-family: work;
 }
-
+.section-title{
+    color: var(--Dark-01, #131313);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-style: normal;
+}
 .gray{
     color: var(--Dark-03, #727272);
     font-family: "Work Sans";
@@ -29,13 +35,7 @@ nav li{
 a{
     text-decoration: none;
 }
-.nav-head{
-    color: var(--Dark-01, #131313);
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 2.8rem;
-    font-style: normal;
-}
+
 nav>ul>li{
     color: var(--Dark-02, #424242);
     text-align: center;
@@ -43,6 +43,7 @@ nav>ul>li{
     font-size: 1rem;
     font-weight: 500;
 }
+/* section title   nicherta eta */
 .ban-head{
     color: var(--Dark-01, #131313);
     text-align: center;
@@ -121,8 +122,33 @@ main{
     font-size: 45px;
     font-weight: 700;
 }
+/* facts-section */
+.fact-head{
+    text-align: left;
+}
+.fact-des{
+    max-width: 542px;
+}
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #727272;
+}
 
-
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+}
 
 
 
