@@ -1,188 +1,134 @@
 /* shared styles */
-*{
-    font-family: work;
-}
-.section-title{
-    color: var(--Dark-01, #131313);
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 2.8rem;
-    font-style: normal;
-}
-.gray{
-    color: var(--Dark-03, #727272);
-    font-family: "Work Sans";
-    font-size: 16px;
-    font-weight: 400;
-}
-header{
-    background: rgba(255, 144, 14, 0.10);
-    padding: 50px 230px;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* This is to align paragraph and list together */
-}
-nav>ul{
-    display: flex;
-    text-decoration: none;
-}
-nav li{
-    margin-right: 25px;
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-
-nav>ul>li{
-    color: var(--Dark-02, #424242);
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 1rem;
-    font-weight: 500;
-}
-/* section title   nicherta eta */
-.ban-head{
-    color: var(--Dark-01, #131313);
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 4rem;
-    font-weight: 700;
-}
-.ban-para{
-    color: var(--Dark-03, #727272);
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 1rem;
-    font-weight: 400;
-}
-.btn-prime{
-    width: 180px;
+.prime{
+    border-radius: 8px;
+    background: #FF900E;
+    border: 0px;
+    padding: 20px 25px;
     color: #FFF;
     font-size: 1.25rem;
     font-weight: 600;
-    border-radius: .5rem;
-    background: #FF900E;
-    padding: 20px 25px;
-    border: 0px;
-    /* margin: 0px 870px; */
-    margin-bottom: 3.12rem;
-    cursor: pointer;
+    cursor: pointer; /* eta diye mouse pointer asle change hye jabe */
 }
+.text-gray{
+    color: #727272;
+}
+.section-title{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color:#131313;
+}
+
+/* nav style */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;/* nav er dui side ke eki line e align korar jonne*/
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    margin-left: 10px;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+/* header padding diye uporer onsho ke majhamajhi kora hoise */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+    /* border: solid blue 2px; */
+}
+
+/* banner style */
+.banner{
+    /* border: solid red 2px; */
+}
+
 .banner-content{
     max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
+    text-align: center; /* sob lekha gulake center style kora hoise*/
+    margin: 0 auto; /* ei margin diye pura page er majhkhane align  kora hoise */
 }
-
+.banner-title{
+    color:#131313;
+    font-size: 4rem;
+}
+.banner-description{
+    font-size: 1rem;
+    color: #727272;
+}
 .banner img{
+    width: 100%; /* eta diye image take responsive/ fluid img banachhi */
     margin-top: 20px;
-    width: 100%;
 }
 
-/* main styles */
+/* main section style */
 main{
     max-width: 1440px;
-    margin: 80px auto;
+    margin: 60px auto; 
 }
-/* team section */
+
 .teams-container{
     display: flex;
     align-items: center;
 }
-.teams-img{
+.teams-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
+.teams-img-container img{
+    max-width: 342px;
+}
 .teams-content{
-    padding: 0 70px;
-    /* border: solid red 5px; */
+    /* border: solid red 2px; */
+    /* padding-right: 40px; */
+    padding-left: 70px;
 }
 .teams-title{
-    max-width: 468px;
-    color: var(--Dark-03, #727272);
-    font-family: "Work Sans";
-    font-size: 45px;
-    font-weight: 500;
-    margin-bottom: 25px;
-    /* border: solid red 5px; */
-}
-.black{
-    color: var(--Dark-01, #131313);
-    font-family: "Work Sans";
-    font-size: 45px;
-    font-weight: 700;
-}
-.orange{
-    color: #FF900E;
-    font-family: "Work Sans";
-    font-size: 45px;
-    font-weight: 700;
-}
-/* facts-section */
-.fact-head{
-    text-align: left;
-}
-.fact-des{
-    max-width: 542px;
-}
-.facts-card-container{
-    display: flex;
-    justify-content: space-around;
-}
-.facts-card-container .card{
-    border-radius: 8px;
-    border: 1px solid #FF900E;
-    text-align: center;
-    padding: 30px;
-}
-.facts-card-container .card-title{
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #727272;
-}
-
-.facts-card-container .card-stats{
     font-size: 2.8rem;
-    color: #424242;
+    max-width: 468px;
+    margin-bottom: 20px;
+}
+.Quick{
+    font-weight: 500
+}
+.of{
+    color:#131313;
+    font-weight: 700;
 }
 
-/* sponser style */
-
-.sponser-para{
-    max-width: 542px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-.sponsors-img-container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    align-items: center;
-    gap: 20px;
-}
-.sponsors-img-container img{
-    width: 165px;
+.Features{
+    color:#FF900E;
+    font-weight: 700;
 }
 
-/* features section */
+.teams-description{
+    color: var(--Dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 540px;
+    /* border: solid green; */
+}
+
+/* feature section */
 .features{
     display: flex;
     margin-top: 130px;
-    gap: 120px;
+    gap: 120px; /* eta dile gap toiri hbe charpase */
 }
-.feature-content{
-    justify-content: center;
+.side-border{
+    border-left: solid #FF900E 10px;
+    padding-left: 20px;
 }
-
 .feature-content .card{
+    padding: 30px;
     margin-bottom: 20px;
-    padding: 20px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
@@ -191,57 +137,108 @@ main{
     height: 90%;
     margin-left: 90px;
 }
+/* imager er vitore button er system */
 .ten-years-badge{
     border-radius: 8px;
     background: #FF900E;
     color: #FFF;
-    width: 340px;
-    padding: 40px; 
-    text-align: center; 
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    /* ei nicher part diye adjust hosse uporer "feature-img img" diye bakita adjust hosse */
     position: relative;
     bottom: 100px;
 }
 .ten-years-badge h2{
     font-size: 4rem;
-    font-family: "Work Sans";
     margin: 0px;
 }
 .ten-years-badge p{
-    color: #FFF;
-    font-family: "Work Sans";
-    font-size: 1.5rem;
-    margin: 2px;
+    font-size: 1.5rem;    
 }
-/* responsive style */
-@media screen and (max-width: 576px) {
+
+
+/* facts style */
+.fact-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+.fact-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+}
+.fact-card-container .card-stats{
+    color: #424242;
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.fact-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+/* sponsor style */
+
+.sponsors{
+    text-align: center;
+}
+.sponsor-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+.sponsor-img-container img{
+    width: 165px;
+}
+
+
+
+
+/* mobile device */
+@media screen and (max-width:576px){
     header{
         padding: 20px;
     }
-    nav>ul, nav, .teams-container, .facts-card-container, .features, .sponsors-img-container{
+    nav, .teams-container, .fact-card-container,
+    .sponsor-img-container, .features{
         flex-direction: column;
     }
-    .feature-img img{
-        width: 100%;
-        margin-left: 0;
+    .teams-img-container {
+        grid-template-columns: 1fr;/*eta dile image niche niche screen thakbe*/
     }
-    .teams-img{
-        grid-template-columns: 1fr;
+    .teams-content, .fact-card-container{
+        padding: 5%;
     }
-    .facts-card-container{
+    .fact-card-container{
         gap: 20px;
+    }
+    nav ul{
+        padding: 0px;/*eta deya hoise nav er 2nd part ta center e align korar jonne*/
+    }
+    .feature-img img{
+        width: 100% ;
+        margin-left: 0px;
     }
     .ten-years-badge{
         position: static;
-        width: 300px;/* eta deya hoise jate mobile device e side e jaite kono somossa na hy */
+        max-width: 300px;
     }
 }
-/* responsive for tab */
-@media screen and (min-width:576px) and (max-width: 960px) {
-
+/* Tab device */
+@media screen and (min-width:576px) and (max-width:960px) {
     header{
-        padding: 20px;
+        padding: 120px;
     }
-    nav>ul, nav, .teams-container, .features{
+
+    nav, .teams-container, .sponsor-img-container, .features{
         flex-direction: column;
     }
+    
 }
